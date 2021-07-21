@@ -1,0 +1,2 @@
+ninja: Entering directory `/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx/cmake/release/x86'
+ninja: no work to do.

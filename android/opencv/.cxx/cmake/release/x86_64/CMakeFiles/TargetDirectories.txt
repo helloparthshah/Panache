@@ -1,0 +1,3 @@
+/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx/cmake/release/x86_64/CMakeFiles/rebuild_cache.dir
+/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx/cmake/release/x86_64/CMakeFiles/edit_cache.dir
+/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx/cmake/release/x86_64/CMakeFiles/opencv_jni_shared.dir
