@@ -1,7 +1,7 @@
 Executable : /home/parth/Android/Sdk/cmake/3.10.2.4988404/bin/ninja
 arguments : 
 -C
-/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx/cmake/debug/x86
+/home/parth/Work/Projects/flutter/panache/android/opencv/.cxx/cmake/debug/x86
 opencv_jni_shared
 jvmArgs : 
 

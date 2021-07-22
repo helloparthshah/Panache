@@ -45,7 +45,7 @@ set(CMAKE_C_LINKER_PREFERENCE 10)
 # Save compiler ABI information.
 set(CMAKE_C_SIZEOF_DATA_PTR "8")
 set(CMAKE_C_COMPILER_ABI "ELF")
-set(CMAKE_C_LIBRARY_ARCHITECTURE "")
+set(CMAKE_C_LIBRARY_ARCHITECTURE "x86_64-linux-gnu")
 
 if(CMAKE_C_SIZEOF_DATA_PTR)
   set(CMAKE_SIZEOF_VOID_P "${CMAKE_C_SIZEOF_DATA_PTR}")
@@ -56,7 +56,7 @@ if(CMAKE_C_COMPILER_ABI)
 endif()
 
 if(CMAKE_C_LIBRARY_ARCHITECTURE)
-  set(CMAKE_LIBRARY_ARCHITECTURE "")
+  set(CMAKE_LIBRARY_ARCHITECTURE "x86_64-linux-gnu")
 endif()
 
 set(CMAKE_C_CL_SHOWINCLUDES_PREFIX "")
@@ -69,5 +69,5 @@ endif()
 
 
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "gcc;dl;c;gcc;dl")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/home/parth/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/lib/linux/x86_64;/home/parth/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x;/home/parth/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/x86_64-linux-android/lib64;/home/parth/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21;/home/parth/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android;/home/parth/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/x86_64-linux-android/lib;/home/parth/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/home/parth/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/lib/linux/x86_64;/home/parth/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/x86_64-linux-android/4.9.x;/home/parth/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/x86_64-linux-android/lib64;/home/parth/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21;/home/parth/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android;/home/parth/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/x86_64-linux-android/lib;/home/parth/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib;/snap/flutter/current/usr/lib/gcc/x86_64-linux-gnu/8;/snap/flutter/current/usr/lib/x86_64-linux-gnu;/snap/flutter/current/usr/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

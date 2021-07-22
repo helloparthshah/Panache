@@ -57,7 +57,8 @@ class _PaintPageState extends State<PaintPage> with TickerProviderStateMixin {
     for (int i = 0; i < 5; i++) {
       Color c =
           Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0);
-      rec.add(PaintColor(c.toString(), c, "Recomended", 0, 0, 0, false));
+      rec.add(PaintColor(c.toString(), c, "Recomended", 0, 0, 0, false,
+          Random().nextDouble() * 10));
     }
   }
 

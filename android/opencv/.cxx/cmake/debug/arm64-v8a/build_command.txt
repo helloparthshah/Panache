@@ -1,7 +1,7 @@
                 Executable : /home/parth/Android/Sdk/cmake/3.10.2.4988404/bin/cmake
 arguments : 
--H/home/parth/Work/Projects/flutter/paintapp/android/opencv/libcxx_helper
--DCMAKE_FIND_ROOT_PATH=/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx/cmake/debug/prefab/arm64-v8a/prefab
+-H/home/parth/Work/Projects/flutter/panache/android/opencv/libcxx_helper
+-DCMAKE_FIND_ROOT_PATH=/home/parth/Work/Projects/flutter/panache/android/opencv/.cxx/cmake/debug/prefab/arm64-v8a/prefab
 -DCMAKE_BUILD_TYPE=Debug
 -DCMAKE_TOOLCHAIN_FILE=/home/parth/Android/Sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake
 -DANDROID_ABI=arm64-v8a
@@ -10,12 +10,12 @@ arguments :
 -DCMAKE_ANDROID_ARCH_ABI=arm64-v8a
 -DCMAKE_ANDROID_NDK=/home/parth/Android/Sdk/ndk/21.1.6352462
 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
--DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/home/parth/Work/Projects/flutter/paintapp/build/opencv/intermediates/cmake/debug/obj/arm64-v8a
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/home/parth/Work/Projects/flutter/panache/build/opencv/intermediates/cmake/debug/obj/arm64-v8a
 -DCMAKE_MAKE_PROGRAM=/home/parth/Android/Sdk/cmake/3.10.2.4988404/bin/ninja
 -DCMAKE_SYSTEM_NAME=Android
 -DCMAKE_SYSTEM_VERSION=21
 -DANDROID_STL=c++_shared
--B/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx/cmake/debug/arm64-v8a
+-B/home/parth/Work/Projects/flutter/panache/android/opencv/.cxx/cmake/debug/arm64-v8a
 -GNinja
 jvmArgs : 
 

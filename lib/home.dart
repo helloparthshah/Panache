@@ -57,23 +57,26 @@ class _HomePageState extends State<HomePage> {
           return Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              InkWell(
-                onTap: () {},
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(
-                    vertical: 10.0,
-                    horizontal: 30,
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        types[index - 1],
-                        style: Theme.of(context).textTheme.headline5,
-                      ),
-                      Icon(Icons.arrow_forward)
-                    ],
-                  ),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 30,
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      types[index - 1],
+                      style: Theme.of(context).textTheme.headline5,
+                    ),
+                    // Icon(Icons.arrow_forward),
+                    IconButton(
+                      onPressed: () {},
+                      padding: EdgeInsets.zero,
+                      // splashRadius: 100,
+                      icon: Icon(Icons.arrow_forward),
+                    ),
+                  ],
                 ),
               ),
               Container(

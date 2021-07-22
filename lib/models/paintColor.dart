@@ -11,6 +11,7 @@ class PaintColor {
   int irReflectivity;
   int tempReduction;
   bool isInterior;
+  double costPerSqft;
 
   void toggleBookmark() {
     bookmarked = !bookmarked;
@@ -24,6 +25,7 @@ class PaintColor {
     int irReflectivity,
     int tempReduction,
     bool isInterior,
+    double costPerSqft,
   ) {
     this.name = name;
     this.color = color;
@@ -32,6 +34,7 @@ class PaintColor {
     this.irReflectivity = irReflectivity;
     this.tempReduction = tempReduction;
     this.isInterior = isInterior;
+    this.costPerSqft = costPerSqft;
   }
 }
 
@@ -50,7 +53,8 @@ void initColors() {
     for (int j = 0; j < 5; j++) {
       Color c =
           Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0);
-      p.add(PaintColor(c.toString(), c, types[i], 0, 0, 0, false));
+      p.add(PaintColor(c.toString(), c, types[i], 0, 0, 0, false,
+          Random().nextDouble() * 10));
     }
     paints.add(p);
   }

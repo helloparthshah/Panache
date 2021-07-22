@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
+
 import 'package:flutter/services.dart';
 import 'package:panache/login.dart';
 import 'package:panache/themes/config.dart';
@@ -7,6 +7,7 @@ import 'package:panache/themes/themes.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
   runApp(MyApp());
 }
 

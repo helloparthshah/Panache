@@ -5,9 +5,9 @@
     "environmentVariables": []
   },
   "cmake": {
-    "cmakeArtifactsBaseFolder": "/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx/cmake/release/arm64-v8a",
-    "cmakeServerLogFile": "/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx/cmake/release/arm64-v8a/cmake_server_log.txt",
-    "cmakeWrappingBaseFolder": "/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx/cxx/release/arm64-v8a",
+    "cmakeArtifactsBaseFolder": "/home/parth/Work/Projects/flutter/panache/android/opencv/.cxx/cmake/release/arm64-v8a",
+    "cmakeServerLogFile": "/home/parth/Work/Projects/flutter/panache/android/opencv/.cxx/cmake/release/arm64-v8a/cmake_server_log.txt",
+    "cmakeWrappingBaseFolder": "/home/parth/Work/Projects/flutter/panache/android/opencv/.cxx/cxx/release/arm64-v8a",
     "effectiveConfiguration": {
       "name": "traditional-android-studio-cmake-environment",
       "description": "Composite reified CMakeSettings configuration",
@@ -15,13 +15,13 @@
       "inheritEnvironments": [
         "ndk"
       ],
-      "buildRoot": "/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx/cmake/release/arm64-v8a",
+      "buildRoot": "/home/parth/Work/Projects/flutter/panache/android/opencv/.cxx/cmake/release/arm64-v8a",
       "cmakeToolchain": "/home/parth/Android/Sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
       "cmakeExecutable": "/home/parth/Android/Sdk/cmake/3.10.2.4988404/bin/cmake",
       "variables": [
         {
           "name": "CMAKE_FIND_ROOT_PATH",
-          "value": "/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx/cmake/release/prefab/arm64-v8a/prefab"
+          "value": "/home/parth/Work/Projects/flutter/panache/android/opencv/.cxx/cmake/release/prefab/arm64-v8a/prefab"
         },
         {
           "name": "CMAKE_BUILD_TYPE",
@@ -57,7 +57,7 @@
         },
         {
           "name": "CMAKE_LIBRARY_OUTPUT_DIRECTORY",
-          "value": "/home/parth/Work/Projects/flutter/paintapp/build/opencv/intermediates/cmake/release/obj/arm64-v8a"
+          "value": "/home/parth/Work/Projects/flutter/panache/build/opencv/intermediates/cmake/release/obj/arm64-v8a"
         },
         {
           "name": "CMAKE_MAKE_PROGRAM",
@@ -78,14 +78,14 @@
       ]
     }
   },
-  "cxxBuildFolder": "/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx/cmake/release/arm64-v8a",
+  "cxxBuildFolder": "/home/parth/Work/Projects/flutter/panache/android/opencv/.cxx/cmake/release/arm64-v8a",
   "info": {
     "abi": "ARM64_V8A",
     "bitness": 64,
     "deprecated": false,
     "default": true
   },
-  "originalCxxBuildFolder": "/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx/cmake/release/arm64-v8a",
+  "originalCxxBuildFolder": "/home/parth/Work/Projects/flutter/panache/android/opencv/.cxx/cmake/release/arm64-v8a",
   "variant": {
     "buildSystemArgumentList": [
       "-DANDROID_STL\u003dc++_shared"
@@ -106,12 +106,12 @@
         "ninjaExe": "/home/parth/Android/Sdk/cmake/3.10.2.4988404/bin/ninja"
       },
       "cmakeToolchainFile": "/home/parth/Android/Sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
-      "cxxFolder": "/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx",
+      "cxxFolder": "/home/parth/Work/Projects/flutter/panache/android/opencv/.cxx",
       "gradleModulePathName": ":opencv",
-      "intermediatesFolder": "/home/parth/Work/Projects/flutter/paintapp/build/opencv/intermediates",
-      "makeFile": "/home/parth/Work/Projects/flutter/paintapp/android/opencv/libcxx_helper/CMakeLists.txt",
-      "moduleBuildFile": "/home/parth/Work/Projects/flutter/paintapp/android/opencv/build.gradle",
-      "moduleRootFolder": "/home/parth/Work/Projects/flutter/paintapp/android/opencv",
+      "intermediatesFolder": "/home/parth/Work/Projects/flutter/panache/build/opencv/intermediates",
+      "makeFile": "/home/parth/Work/Projects/flutter/panache/android/opencv/libcxx_helper/CMakeLists.txt",
+      "moduleBuildFile": "/home/parth/Work/Projects/flutter/panache/android/opencv/build.gradle",
+      "moduleRootFolder": "/home/parth/Work/Projects/flutter/panache/android/opencv",
       "ndkDefaultAbiList": [
         "ARMEABI_V7A",
         "ARM64_V8A",
@@ -175,12 +175,12 @@
       "ndkDefaultStl": "LIBCXX_STATIC",
       "ndkVersion": "21.1.6352462",
       "project": {
-        "compilerSettingsCacheFolder": "/home/parth/Work/Projects/flutter/paintapp/android/.cxx",
-        "cxxFolder": "/home/parth/Work/Projects/flutter/paintapp/android/.cxx",
+        "compilerSettingsCacheFolder": "/home/parth/Work/Projects/flutter/panache/android/.cxx",
+        "cxxFolder": "/home/parth/Work/Projects/flutter/panache/android/.cxx",
         "isBuildOnlyTargetAbiEnabled": true,
         "isCmakeBuildCohabitationEnabled": false,
         "isNativeCompilerSettingsCacheEnabled": false,
-        "rootBuildGradleFolder": "/home/parth/Work/Projects/flutter/paintapp/android",
+        "rootBuildGradleFolder": "/home/parth/Work/Projects/flutter/panache/android",
         "sdkFolder": "/home/parth/Android/Sdk",
         "isPrefabEnabled": false
       },
@@ -197,7 +197,7 @@
         "SYSTEM": {}
       }
     },
-    "objFolder": "/home/parth/Work/Projects/flutter/paintapp/build/opencv/intermediates/cmake/release/obj",
+    "objFolder": "/home/parth/Work/Projects/flutter/panache/build/opencv/intermediates/cmake/release/obj",
     "variantName": "release",
     "validAbiList": [
       "ARMEABI_V7A",
@@ -205,8 +205,8 @@
       "X86",
       "X86_64"
     ],
-    "prefabDirectory": "/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx/cmake/release/prefab",
+    "prefabDirectory": "/home/parth/Work/Projects/flutter/panache/android/opencv/.cxx/cmake/release/prefab",
     "prefabPackageDirectoryList": []
   },
-  "prefabFolder": "/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx/cmake/release/prefab/arm64-v8a"
+  "prefabFolder": "/home/parth/Work/Projects/flutter/panache/android/opencv/.cxx/cmake/release/prefab/arm64-v8a"
 }

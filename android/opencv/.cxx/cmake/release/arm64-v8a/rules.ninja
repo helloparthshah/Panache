@@ -42,7 +42,7 @@ rule CXX_STATIC_LIBRARY_LINKER__opencv_jni_shared
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /home/parth/Android/Sdk/cmake/3.10.2.4988404/bin/cmake -H/home/parth/Work/Projects/flutter/paintapp/android/opencv/libcxx_helper -B/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx/cmake/release/arm64-v8a
+  command = /home/parth/Android/Sdk/cmake/3.10.2.4988404/bin/cmake -H/home/parth/Work/Projects/flutter/panache/android/opencv/libcxx_helper -B/home/parth/Work/Projects/flutter/panache/android/opencv/.cxx/cmake/release/arm64-v8a
   description = Re-running CMake...
   generator = 1
 

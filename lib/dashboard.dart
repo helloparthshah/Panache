@@ -1,6 +1,7 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/animation.dart';
 import 'package:flutter/material.dart';
+import 'package:panache/calc.dart';
 import 'package:panache/camera.dart';
 import 'package:panache/home.dart';
 import 'package:panache/themes/colors.dart';
@@ -29,58 +30,70 @@ class _DashPageState extends State<DashPage> {
         },
         children: [
           HomePage(),
+          CalcPage(),
           Container(
-            color: Theme.of(context).scaffoldBackgroundColor,
+            color: Colors.black,
           ),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Theme.of(context).primaryColor,
-        onPressed: () async {
-          WidgetsFlutterBinding.ensureInitialized();
-          List<CameraDescription> cameras = await availableCameras();
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => CameraPage(cameras)),
-          );
-        },
-        child: Icon(
-          Icons.camera,
-          color: Colors.white,
-        ),
-        tooltip: 'Paint',
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      bottomNavigationBar: ClipRRect(
-        borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(30), topRight: Radius.circular(30)),
-        child: BottomNavigationBar(
-          showUnselectedLabels: false,
-          // backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-          backgroundColor: CustomColors.primary,
-          // unselectedItemColor: CustomColors.grey,
-          unselectedItemColor: CustomColors.aquagreen,
-          currentIndex: _selectedIndex,
-          // selectedItemColor: CustomColors.primary,
-          selectedItemColor: CustomColors.white,
-          onTap: (index) {
-            setState(() {
-              _selectedIndex = index;
-
-              _controller.animateToPage(index,
-                  duration: Duration(milliseconds: 200), curve: Curves.easeIn);
-            });
+      floatingActionButton: AnimatedOpacity(
+        duration: Duration(milliseconds: 200),
+        opacity: _selectedIndex == 0 ? 1 : 0,
+        child: FloatingActionButton(
+          backgroundColor: Theme.of(context).primaryColor,
+          onPressed: () async {
+            WidgetsFlutterBinding.ensureInitialized();
+            List<CameraDescription> cameras = await availableCameras();
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => CameraPage(cameras)),
+            );
           },
-          items: [
-            BottomNavigationBarItem(
-              label: 'Home',
-              icon: Icon(Icons.home_outlined),
-            ),
-            BottomNavigationBarItem(
-              label: 'Library',
-              icon: Icon(Icons.folder_open_outlined),
-            ),
-          ],
+          child: Icon(
+            Icons.camera,
+            color: Colors.white,
+          ),
+          tooltip: 'Visualizer',
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: ClipRRect(
+          borderRadius: BorderRadius.all(Radius.circular(30)),
+          child: BottomNavigationBar(
+            showUnselectedLabels: false,
+            // backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+            backgroundColor: CustomColors.primary,
+            // unselectedItemColor: CustomColors.grey,
+            unselectedItemColor: CustomColors.aquagreen,
+            currentIndex: _selectedIndex,
+            // selectedItemColor: CustomColors.primary,
+            selectedItemColor: CustomColors.white,
+            onTap: (index) {
+              setState(() {
+                _selectedIndex = index;
+
+                _controller.animateToPage(index,
+                    duration: Duration(milliseconds: 200),
+                    curve: Curves.easeIn);
+              });
+            },
+            items: [
+              BottomNavigationBarItem(
+                label: 'Home',
+                icon: Icon(Icons.home_outlined),
+              ),
+              BottomNavigationBarItem(
+                label: 'Calculator',
+                icon: Icon(Icons.calculate),
+              ),
+              BottomNavigationBarItem(
+                label: 'Library',
+                icon: Icon(Icons.folder_open_outlined),
+              ),
+            ],
+          ),
         ),
       ),
     );

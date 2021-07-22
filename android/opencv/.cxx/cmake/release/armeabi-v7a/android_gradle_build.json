@@ -1,33 +1,33 @@
 {
   "stringTable": {
-    "0": "/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx/cmake/release/armeabi-v7a",
+    "0": "/home/parth/Work/Projects/flutter/panache/android/opencv/.cxx/cmake/release/armeabi-v7a",
     "1": "--target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/parth/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/parth/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -Oz -DNDEBUG -fPIC"
   },
   "buildFiles": [
-    "/home/parth/Work/Projects/flutter/paintapp/android/opencv/libcxx_helper/CMakeLists.txt",
+    "/home/parth/Work/Projects/flutter/panache/android/opencv/libcxx_helper/CMakeLists.txt",
     "/home/parth/Android/Sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
     "/home/parth/Android/Sdk/ndk/21.1.6352462/build/cmake/platforms.cmake"
   ],
   "cleanCommands": [
-    "/home/parth/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx/cmake/release/armeabi-v7a\" clean"
+    "/home/parth/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/parth/Work/Projects/flutter/panache/android/opencv/.cxx/cmake/release/armeabi-v7a\" clean"
   ],
-  "buildTargetsCommand": "/home/parth/Android/Sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx/cmake/release/armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "/home/parth/Android/Sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/home/parth/Work/Projects/flutter/panache/android/opencv/.cxx/cmake/release/armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "opencv_jni_shared-Release-armeabi-v7a": {
-      "buildCommand": "/home/parth/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx/cmake/release/armeabi-v7a\" opencv_jni_shared",
+      "buildCommand": "/home/parth/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/parth/Work/Projects/flutter/panache/android/opencv/.cxx/cmake/release/armeabi-v7a\" opencv_jni_shared",
       "buildType": "release",
       "toolchain": "2636477504",
       "abi": "armeabi-v7a",
       "artifactName": "opencv_jni_shared",
       "files": [
         {
-          "src": "/home/parth/Work/Projects/flutter/paintapp/android/opencv/libcxx_helper/dummy.cpp",
+          "src": "/home/parth/Work/Projects/flutter/panache/android/opencv/libcxx_helper/dummy.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         }
       ],
       "headers": [],
-      "output": "/home/parth/Work/Projects/flutter/paintapp/android/opencv/.cxx/cmake/release/armeabi-v7a/libopencv_jni_shared.a"
+      "output": "/home/parth/Work/Projects/flutter/panache/android/opencv/.cxx/cmake/release/armeabi-v7a/libopencv_jni_shared.a"
     }
   },
   "toolchains": {
