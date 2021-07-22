@@ -25,7 +25,7 @@ class _PaintPageState extends State<PaintPage> with TickerProviderStateMixin {
   // List<Uint8List> bytelist;
   // int height;
   // int width;
-  String c = "#000000";
+  // String c = "#000000";
   Offset o = Offset(200, 200);
   List<PaintColor> rec = List<PaintColor>.empty(growable: true);
   int _index = 0;
@@ -51,15 +51,15 @@ class _PaintPageState extends State<PaintPage> with TickerProviderStateMixin {
         new CurvedAnimation(
             parent: _animationController, curve: Curves.easeInOutCirc));
 
-    _animationController.forward();
-    getImg(widget.image);
-
     for (int i = 0; i < 5; i++) {
       Color c =
           Color((Random().nextDouble() * 0xFFFFFF).toInt()).withOpacity(1.0);
       rec.add(PaintColor(c.toString(), c, "Recomended", 0, 0, 0, false,
           Random().nextDouble() * 10));
     }
+    _selectedColor = rec[0];
+    _animationController.forward();
+    getImg(widget.image);
   }
 
   @override
@@ -91,7 +91,8 @@ class _PaintPageState extends State<PaintPage> with TickerProviderStateMixin {
         "height": height,
         "width": width,
         "strides": strides,
-        "color": c,
+        "color":
+            '#${(_selectedColor.color.value & 0xFFFFFF).toRadixString(16).padLeft(6, '0')}',
         "x": o.dx,
         "y": o.dy
       });
@@ -237,7 +238,7 @@ class _PaintPageState extends State<PaintPage> with TickerProviderStateMixin {
                                 _animationController.reset();
                                 _animationController.forward();
                                 setState(() {
-                                  c = '#${(p[i].color.value & 0xFFFFFF).toRadixString(16).padLeft(6, '0')}';
+                                  // c = '#${(p[i].color.value & 0xFFFFFF).toRadixString(16).padLeft(6, '0')}';
 
                                   // selInd = i;
                                   _selectedColor = p[i];
