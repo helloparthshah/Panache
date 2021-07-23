@@ -1,9 +1,9 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/animation.dart';
 import 'package:flutter/material.dart';
-import 'package:panache/calc.dart';
-import 'package:panache/camera.dart';
-import 'package:panache/home.dart';
+import 'package:panache/retail/calc.dart';
+import 'package:panache/retail/camera.dart';
+import 'package:panache/retail/home.dart';
 import 'package:panache/themes/colors.dart';
 
 class DashPage extends StatefulWidget {

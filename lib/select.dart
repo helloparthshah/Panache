@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:panache/dashboard.dart';
+import 'package:panache/retail/dashboard.dart';
+import 'package:panache/dealer/dealerHome.dart';
 import 'package:panache/themes/colors.dart';
 import 'package:panache/themes/config.dart';
 
@@ -83,10 +84,16 @@ class _SelectPageState extends State<SelectPage> {
                 padding: EdgeInsets.symmetric(vertical: 10),
                 child: TextButton(
                   onPressed: () async {
-                    Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(builder: (context) => DashPage()),
-                    );
+                    if (selectedIndex == 2)
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => DealerHome()),
+                      );
+                    else
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => DashPage()),
+                      );
                   },
                   child: Text('Continue'),
                 ),

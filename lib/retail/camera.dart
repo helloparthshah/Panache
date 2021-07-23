@@ -2,7 +2,7 @@ import 'dart:typed_data';
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:panache/paintpage.dart';
+import 'package:panache/retail/paintpage.dart';
 
 class CameraPage extends StatefulWidget {
   final List<CameraDescription> cameras;

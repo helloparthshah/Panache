@@ -27,6 +27,28 @@ class CustomTheme with ChangeNotifier {
       scaffoldBackgroundColor: CustomColors.white,
       textTheme: TextTheme(),
       iconTheme: IconThemeData(color: Colors.black),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: ButtonStyle(
+          shape: MaterialStateProperty.all(
+            RoundedRectangleBorder(
+              side: BorderSide(
+                color: CustomColors.primary,
+              ),
+              borderRadius: BorderRadius.circular(30.0),
+            ),
+          ),
+          backgroundColor: MaterialStateProperty.all<Color>(
+              CustomColors.primary.withAlpha(200)),
+          overlayColor: MaterialStateProperty.all<Color>(Colors.white24),
+          foregroundColor: MaterialStateProperty.all<Color>(CustomColors.black),
+          minimumSize: MaterialStateProperty.all<Size>(
+            Size(
+              200,
+              50,
+            ),
+          ),
+        ),
+      ),
       textButtonTheme: TextButtonThemeData(
         style: ButtonStyle(
           shape: MaterialStateProperty.all(RoundedRectangleBorder(
@@ -53,6 +75,28 @@ class CustomTheme with ChangeNotifier {
       scaffoldBackgroundColor: CustomColors.black,
       textTheme: ThemeData.dark().textTheme,
       iconTheme: IconThemeData(color: Colors.white),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: ButtonStyle(
+          shape: MaterialStateProperty.all(
+            RoundedRectangleBorder(
+              side: BorderSide(
+                color: CustomColors.primary,
+              ),
+              borderRadius: BorderRadius.circular(30.0),
+            ),
+          ),
+          backgroundColor:
+              MaterialStateProperty.all<Color>(CustomColors.primary),
+          overlayColor: MaterialStateProperty.all<Color>(Colors.white24),
+          foregroundColor: MaterialStateProperty.all<Color>(CustomColors.white),
+          minimumSize: MaterialStateProperty.all<Size>(
+            Size(
+              200,
+              50,
+            ),
+          ),
+        ),
+      ),
       textButtonTheme: TextButtonThemeData(
         style: ButtonStyle(
           shape: MaterialStateProperty.all(RoundedRectangleBorder(

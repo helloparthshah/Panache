@@ -9,7 +9,7 @@ import 'package:flutter/services.dart';
 // import 'package:flutter_circle_color_picker/flutter_circle_color_picker.dart';
 import 'package:panache/themes/config.dart';
 
-import 'models/paintColor.dart';
+import '../models/paintColor.dart';
 
 class PaintPage extends StatefulWidget {
   final CameraImage image;
@@ -200,21 +200,10 @@ class _PaintPageState extends State<PaintPage> with TickerProviderStateMixin {
                           Tab(
                             child: Text('Recommended for you'),
                           ),
-                          Tab(
-                            child: Text("Cool Paints"),
-                          ),
-                          Tab(
-                            child: Text('Premium Paints'),
-                          ),
-                          Tab(
-                            child: Text('Roof Paints'),
-                          ),
-                          Tab(
-                            child: Text('Interior Paints'),
-                          ),
-                          Tab(
-                            child: Text('Exterior Paints'),
-                          ),
+                          for (var s in types)
+                            Tab(
+                              child: Text(s),
+                            ),
                         ],
                       ),
                     ),
